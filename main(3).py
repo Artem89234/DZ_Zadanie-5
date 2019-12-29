@@ -1,13 +1,15 @@
 c = []
-b = 0
-for i in range(10):
-    a = int(input('Введите число: '))
+for i in range(4):
+    a = int(input('Ведите число: '))
     c.append(a)
 
-for i in range(5):
+r = 0
+for i in range(4):
     i = i + 1
-    if c[i]%2==1:
+    if i%2==0:
         i = i - 1
-        b = b + c[i]
-print('Сумма нечетных чисел в четных индексах: ',b)
+        if c[i]%2==1:
+            r = r + c[i]
+
+print('Сумма нечетных чисел в четных индексах: ',r)
     
